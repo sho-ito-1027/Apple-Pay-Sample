@@ -14,6 +14,7 @@
 		C605F99722958E0C00B4F7CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C605F99522958E0C00B4F7CA /* LaunchScreen.storyboard */; };
 		C605F9A222958E0C00B4F7CA /* ApplePaySampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C605F9A122958E0C00B4F7CA /* ApplePaySampleTests.swift */; };
 		C605F9AD22958E0C00B4F7CA /* ApplePaySampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C605F9AC22958E0C00B4F7CA /* ApplePaySampleUITests.swift */; };
+		C605F9BB22958E5700B4F7CA /* ApplePayWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C605F9BA22958E5700B4F7CA /* ApplePayWrapper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		C605F9A822958E0C00B4F7CA /* ApplePaySampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ApplePaySampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C605F9AC22958E0C00B4F7CA /* ApplePaySampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplePaySampleUITests.swift; sourceTree = "<group>"; };
 		C605F9AE22958E0C00B4F7CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C605F9BA22958E5700B4F7CA /* ApplePayWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplePayWrapper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				C605F99322958E0C00B4F7CA /* Assets.xcassets */,
 				C605F99522958E0C00B4F7CA /* LaunchScreen.storyboard */,
 				C605F99822958E0C00B4F7CA /* Info.plist */,
+				C605F9BA22958E5700B4F7CA /* ApplePayWrapper.swift */,
 			);
 			path = ApplePaySample;
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 			files = (
 				C605F98F22958E0B00B4F7CA /* ViewController.swift in Sources */,
 				C605F98D22958E0B00B4F7CA /* AppDelegate.swift in Sources */,
+				C605F9BB22958E5700B4F7CA /* ApplePayWrapper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,7 +367,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -418,7 +422,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
