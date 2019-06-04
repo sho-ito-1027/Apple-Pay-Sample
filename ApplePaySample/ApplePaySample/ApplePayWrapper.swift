@@ -29,25 +29,25 @@ private let billingAddressFields: [PKAddressField] = []
 private let shippingAddressFields: PKAddressField = .all
 
 private enum ShippingMethod: String, CaseIterable {
-    case yamato
-    case sagawa
-    case japanPost
+    case blackCats
+    case yuyama
+    case japonPost
 
     func create() -> PKShippingMethod {
         let method: PKShippingMethod
         switch self {
-        case .yamato:
-            method = PKShippingMethod(label: "クロネコヤマト", amount: 600)
+        case .blackCats:
+            method = PKShippingMethod(label: "Black Cats", amount: 600)
+            method.identifier = rawValue
+            method.detail = "宅急便"
+        case .yuyama:
+            method = PKShippingMethod(label: "佑山急便", amount: 600)
             method.identifier = rawValue
             method.detail = "メール便"
-        case .sagawa:
-            method = PKShippingMethod(label: "佐川急便", amount: 600)
+        case .japonPost:
+            method = PKShippingMethod(label: "Japon郵便", amount: 600)
             method.identifier = rawValue
-            method.detail = "メール便"
-        case .japanPost:
-            method = PKShippingMethod(label: "日本郵便", amount: 600)
-            method.identifier = rawValue
-            method.detail = "メール便"
+            method.detail = "レターパック"
         }
 
         return method
